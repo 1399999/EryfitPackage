@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EryfitPackageUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Home" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+
+        <TextBlock MinHeight="30" Grid.Row="1">Eryfit Tools:</TextBlock>
+
+        <ListBox Grid.Row="2">
+            <ItemsControl>Word</ItemsControl>
+            <ItemsControl>Refrencer</ItemsControl>
+            <ItemsControl>Calculator</ItemsControl>
+        </ListBox>
     </Grid>
 </Window>
